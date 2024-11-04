@@ -1,18 +1,11 @@
-import { useState, useEffect } from "react";
+// import { useState } from "react";
 import "./App.css";
+import ContactList from "./components//ContactList.jsx";
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    console.log("hello from useEffect");
-  }, [count]);
-
   return (
     <>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
+      <ContactList />
     </>
   );
 }
